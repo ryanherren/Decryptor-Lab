@@ -21,7 +21,7 @@ import java.util.HashMap;
  *
  * Place your @author tags here.
  * @author First Last : netid@iastate.edu
- * @author ...
+ * @author Tanner Dunn tcdunn@iastate.edu
  * @author ...
  * @author ...
  */
@@ -77,7 +77,18 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-        // TODO
+        for(int i = 0; i < toDecrypt.length; i++) {
+        	if((i % 3) == 0) {
+        		toDecrypt[i]--;
+        	}
+        	else if((i % 3) == 1) {
+        		toDecrypt[i] - 2;
+        	}
+        	else {
+        		toDecrypt[i] - 3;
+        	}
+        }
+        	
     }
 
 
