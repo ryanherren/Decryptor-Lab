@@ -20,7 +20,7 @@ import java.util.HashMap;
  * language as opposed to C (The C solution for this is literally like 8x more complex).
  *
  * Place your @author tags here.
- * @author First Last : netid@iastate.edu
+ * @author Ryan Herren rherren@iastate.edu
  * @author ...
  * @author ...
  * @author ...
@@ -58,7 +58,9 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
+        for(int i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i] = parseInt(toDecrypt[i], 2);
+        }
     }
 
 
@@ -77,7 +79,7 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-        // TODO
+
     }
 
 
