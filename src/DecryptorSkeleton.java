@@ -20,9 +20,14 @@ import java.util.HashMap;
  * language as opposed to C (The C solution for this is literally like 8x more complex).
  *
  * Place your @author tags here.
+<<<<<<< HEAD
  * @author First Last : netid@iastate.edu
  * @author Tanner Dunn tcdunn@iastate.edu
+=======
+ * @author Ryan Herren rherren@iastate.edu
+>>>>>>> 8985923826dd8f4138d407b6021986277f103744
  * @author ...
+ * @author Nidal Zayed nizayed@iastate.edu
  * @author ...
  */
 public class DecryptorSkeleton {
@@ -58,7 +63,9 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
+        for(int i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i] = parseInt(toDecrypt[i], 2);
+        }
     }
 
 
@@ -77,6 +84,7 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
+<<<<<<< HEAD
         for(int i = 0; i < toDecrypt.length; i++) {
         	if((i % 3) == 0) {
         		toDecrypt[i]--;
@@ -89,6 +97,9 @@ public class DecryptorSkeleton {
         	}
         }
         	
+=======
+
+>>>>>>> 8985923826dd8f4138d407b6021986277f103744
     }
 
 
@@ -104,7 +115,9 @@ public class DecryptorSkeleton {
      * @param toDecrypt - The array to be decoded.
      */
     public static void divideArrayValues(int[] toDecrypt) {
-        // TODO
+        for(int i = 0; i < toDecrypt.length; i++) {
+        	toDecrypt[i] = toDecrypt[i] / 5;
+        }
     }
 
 
