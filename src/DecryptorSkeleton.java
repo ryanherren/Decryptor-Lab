@@ -28,7 +28,7 @@ import java.util.HashMap;
 >>>>>>> 8985923826dd8f4138d407b6021986277f103744
  * @author ...
  * @author Nidal Zayed nizayed@iastate.edu
- * @author ...
+ * @author Logan Metcalfe loganmm@iastate.edu
  */
 public class DecryptorSkeleton {
     public static void main(String[] args) {
@@ -163,8 +163,9 @@ public class DecryptorSkeleton {
         cypher.put(26, 'z');
 
         StringBuilder solution = new StringBuilder();
-
-        // TODO
+        for(int i = 0; i < 26; i++) {
+            system.out.print HashMap[ i];
+        }
 
         solution.append('!');
         return solution.toString();
